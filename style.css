@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    /* border: 1px solid black; */ 
+}
+.navbar{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px 30px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    color: #333333;
+    font-weight: 500;
+}
+.logo{
+    color: #007bff;
+}
+.links{
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 20px;
+}
+
+.menu{
+    width: 50px;
+    display: none;
+}
+.menu img{
+    width: 100%;
+}
+.link{
+    list-style-type: none;
+}
+.link a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+}
+.link a:hover{
+    color: #007bff;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    width: 90%;
+background: linear-gradient(#ffffff,#8ec1f89a,#ffffff);
+    margin: auto;
+    margin-top: 100px;
+    color: #333333;
+    padding: 20px 30px;
+}
+.bannertext{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.bannertext p{
+    font-size: 28px;
+}
+h1{
+    font-size: 34px;
+    margin: 12px 0px 12px 0px;
+}
+h1 span{
+    color: #007bff;
+}
+.bannerbtns{
+    margin-top: 30px;
+}
+.bannerbtns button{
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+ 
+    border: none;
+    border-radius: 4px;
+}
+.bannerbtns button a {
+    color: #fff;
+    text-decoration: none;
+}
+.bannerbtns button:hover{
+    background-color: #727272;
+}
+.bannerimage{
+    width: 50%;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerimage img{
+    width: 350px;
+}
+.about, .skills,.projects{
+    color: #333333;
+    /* min-height: 50vh; */
+    /* border: 1px solid blue; */
+    font-size: 20px;
+    padding: 20px 30px;
+    width: 90%;
+    margin: auto;
+    border-radius: 4px;
+    /* background-color: #f1f1f1; */
+    margin-top: 30px;
+}
+.heading{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+ /* Styles for the parent container */
+ .project-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;    
+  }
+
+  /* Styles for the project cards */
+  .project-card {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .project-card a{
+    text-decoration: none;
+    color: #007bff;
+  }
+  /* Styles for the project image */
+  .project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  .project-image img{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Styles for the project description */
+  .project-description {
+    padding: 10px;
+    text-align: center;
+  }
+.skillsdiv{
+    margin-top: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.skillcard{
+    width: 48%;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333333;
+}
+.heading{
+    text-align: center;
+}
+.skillcard:hover{
+    box-shadow:none;
+}
+.skillicon{
+    width: 100%;
+}
+.skillicon img{
+    width: 100%;
+}
+.moreskills{
+    margin-top: 20px;
+}
+.contact{
+    /* border: 1px solid blue; */
+    background-color: #f1f1f1;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    color: #333333;
+}
+.contactinfo{
+    margin-top:20px ;
+}
+
+.socials{
+    display: flex;
+    gap: 50px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+.socials .icon{
+    width:40px;
+}
+.icon img{
+    width: 100%;
+}

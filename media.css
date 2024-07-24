@@ -1,0 +1,106 @@
+@media (max-width:768px){
+
+    .navbar{
+        padding: 0;
+        margin-top: 40px;
+        position: relative;
+    }
+    .banner{
+        display: block;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 0px;
+        color: #333333;
+        padding: 0;
+        border: 1px solid red;
+   
+    }
+    .links{
+        display: none;
+    }
+    .showlinks{
+        display: block;
+        /* border: 2px solid black; */
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #333333;
+    }
+    .link{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .menu{
+        display: block;
+    }
+    .bannertext{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 80px;
+    }
+    .bannertext p{
+        font-size: 28px;
+    }
+    h1{
+        font-size: 34px;
+        margin: 12px 0px 12px 0px;
+    }
+    h1 span{
+        color: #007bff;
+    }
+    .bannerbtns{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bannerbtns button{
+        font-size: 28px;
+  
+    }
+    .bannerimage{
+        display: none;
+    }
+ 
+  
+    .about, .skills,.projects{
+        color: #333333;
+        font-size: 20px;
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        border-radius: 4px;
+        background-color:#f9f9f9;
+        padding: 20px 30px;
+        margin-top: 0px;
+        border: 1px solid red;
+    }  
+    .heading{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .skills,.projects{
+        margin-top: 100px;
+    }
+    .skillsdiv{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skillcard{
+        width: 90%;
+    }
+     /* Styles for the parent container */
+ .project-container {
+    grid-template-columns: repeat(1,1fr);    
+  }
+
+  /* Styles for the project cards */
+  .project-card {
+    width: 100%;
+  }
+
+}
