@@ -6,8 +6,6 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #333333;
-    color: white;
 }
 .header{
     min-height: 100vh;
