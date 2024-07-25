@@ -89,4 +89,24 @@
       .intro-image img{
         width: 100%;
       }
+      .overview-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+      }
+      .allabout{
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    
+        
+      }
+      .allabout-intro{
+        text-align: center;
+        width: 90%;
+        margin: auto;
+      }
+      
 }

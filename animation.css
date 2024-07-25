@@ -17,18 +17,31 @@
     opacity: 0.8;
     animation: float 10s infinite;
   }
-  
+  .parti2{
+    background: #a8edea;
+  }
   @keyframes float {
     0% {
       transform: translateY(0) translateX(0);
     }
     50% {
-      transform: translateY(-100vh) translateX(100vw);
+      transform: translateY(0vh) translateX(20vw);
     }
     100% {
       transform: translateY(0) translateX(0);
     }
   }
+  /* @keyframes float2 {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(100vh) translateX(0vw);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  } */
   
   .particle:nth-child(1) {
     top: 20%;
@@ -63,7 +76,7 @@
   .particle:nth-child(6) {
     top: 10%;
     left: 50%;
-    animation-delay: 1s;
+    animation-delay: 0s;
   }
   
   .particle:nth-child(7) {
@@ -81,7 +94,7 @@
   .particle:nth-child(9) {
     top: 30%;
     left: 40%;
-    animation-delay: 1s;
+    animation-delay: 0s;
   }
   
   .particle:nth-child(10) {
@@ -97,7 +110,7 @@
   .particle:nth-child(12) {
     top: 90%;
     left: 70%;
-    animation-delay: 1s;
+    animation-delay: 0s;
   }
   .particle:nth-child(13) {
     top: 20%;
