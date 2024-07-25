@@ -38,7 +38,7 @@ body.dark-mode {
 
 .header.dark-mode{
     background-image: none;
-    background-color: #2C3E50;
+    background-color: var(--dark-bg);
 }
 
 .navbar{
@@ -161,4 +161,46 @@ border-radius: 6px;
     background: #303136;
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+
+  .intro{
+    display: flex;
+    width: 80%;
+    gap: 40px;
+    margin: auto;
+  }
+  .intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+  }
+  .intro-text h1{
+    font-size: 36px;
+  }
+  .intro-text p{
+    align-self: flex-start;
+    font-size: 18px;
+  }
+  .cta-btn{
+    align-self: flex-start;
+  }
+  .cta-btn button{
+margin-top: 6px;
+border-radius: 6px;
+border: none;
+}
+.cta-btn a{
+      
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+    color: var(--light-text);
+  }
+  .cta-btn a.dark-mode{
+    color: var(--dark-text);
+    background-color: var(--dark-bg);
+    border-radius: 6px;
   }

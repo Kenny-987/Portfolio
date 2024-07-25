@@ -61,4 +61,32 @@
     .close img{
         width: 100%;
     }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        margin-top: 30px;
+      }
+      .intro-text{
+        width: 100%;
+      }
+      .intro-text h1{
+        margin-bottom: 20px;
+      }
+     
+    .intro-image{
+          width: 90%;
+          margin: auto;
+      }
+      .cta-btn{
+        margin-top: 20px;
+    }
+    .cta-btn a{
+        font-size: 20px;
+        
+      }
+      .intro-image img{
+        width: 100%;
+      }
 }
