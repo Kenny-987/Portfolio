@@ -1,3 +1,11 @@
+
+:root {
+    --light-bg: #fff;
+    --light-text: #2C3E50;
+    --dark-bg: #222;
+    --dark-text: #fff;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -5,12 +13,34 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     scroll-behavior: smooth;
 }
-body{
+.header-content{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
 }
+.dark{
+    color: #222;
+}
+body{
+    background-color: var(--light-bg);
+    color: var(--light-text);
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+
 .header{
     min-height: 100vh;
-    /* border: 1px solid black; */ 
+    background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
+
+.header.dark-mode{
+    background-image: none;
+    background-color: #2C3E50;
+}
+
 .navbar{
     /* border: 1px solid red; */
     display: flex;
@@ -20,198 +50,115 @@ body{
     padding: 20px 30px;
     width: 90%;
     margin: auto;
-    margin-top: 10px;
-    color: #333333;
     font-weight: 500;
 }
 .logo{
-    color: #007bff;
+    width: 60px;
+}
+.logo img{
+width: 100%;
+border-radius: 6px;
 }
 .links{
     /* border: 1px solid blue; */
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
-.menu{
-    width: 50px;
+
+.close{
     display: none;
-}
-.menu img{
-    width: 100%;
 }
 .link{
     list-style-type: none;
 }
 .link a{
     text-decoration: none;
-    color: #333333;
+    color: var(--light-text);
+    font-weight: 500;
+}
+.link a.dark-mode{
+    text-decoration: none;
+    color: var(--dark-text);
     font-weight: 500;
 }
 .link a:hover{
-    color: #007bff;
+    color: #000;
 }
-.banner{
+
+.link-switch{
     display: flex;
-    align-items: center;
-    width: 90%;
-background: linear-gradient(#ffffff,#8ec1f89a,#ffffff);
-    margin: auto;
-    margin-top: 100px;
-    color: #333333;
-    padding: 20px 30px;
-}
-.bannertext{
-    /* border: 1px solid red; */
-    width: 50%;
-}
-.bannertext p{
-    font-size: 28px;
-}
-h1{
-    font-size: 34px;
-    margin: 12px 0px 12px 0px;
-}
-h1 span{
-    color: #007bff;
-}
-.bannerbtns{
-    margin-top: 30px;
-}
-.bannerbtns button{
-    font-size: 24px;
-    padding: 8px;
-    cursor: pointer;
-    background-color: #007bff;
- 
-    border: none;
-    border-radius: 4px;
-}
-.bannerbtns button a {
-    color: #fff;
-    text-decoration: none;
-}
-.bannerbtns button:hover{
-    background-color: #727272;
-}
-.bannerimage{
-    width: 50%;
-    /* border: 2px solid blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.bannerimage img{
-    width: 350px;
-}
-.about, .skills,.projects{
-    color: #333333;
-    /* min-height: 50vh; */
-    /* border: 1px solid blue; */
-    font-size: 20px;
-    padding: 20px 30px;
-    width: 90%;
-    margin: auto;
-    border-radius: 4px;
-    /* background-color: #f1f1f1; */
-    margin-top: 30px;
-}
-.heading{
-    font-size: 36px;
-    font-weight: 500;
-}
-
- /* Styles for the parent container */
- .project-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;    
-  }
-
-  /* Styles for the project cards */
-  .project-card {
-    width: 100%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .project-card a{
-    text-decoration: none;
-    color: #007bff;
-  }
-  /* Styles for the project image */
-  .project-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-  }
-  .project-image img{
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Styles for the project description */
-  .project-description {
-    padding: 10px;
-    text-align: center;
-  }
-.skillsdiv{
-    margin-top: 30px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
-.skillcard{
-    width: 48%;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: #333333;
+.menu{
+    width: 40px;
+    height: 40px;
+    display: none;
 }
-.heading{
-    text-align: center;
-}
-.skillcard:hover{
-    box-shadow:none;
-}
-.skillicon{
-    width: 100%;
-}
-.skillicon img{
-    width: 100%;
-}
-.moreskills{
-    margin-top: 20px;
-}
-.contact{
-    /* border: 1px solid blue; */
-    background-color: #f1f1f1;
-    font-size: 20px;
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-    margin-top: 100px;
-    color: #333333;
-}
-.contactinfo{
-    margin-top:20px ;
-}
-
-.socials{
+.menu-switch{
     display: flex;
-    gap: 50px;
-    width: fit-content;
-    margin: auto;
-    margin-top: 30px;
+    align-items: center;
+    
 }
-.socials .icon{
-    width:40px;
-}
-.icon img{
+.menu img{
     width: 100%;
+    height: 100%;
 }
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 50px;
+    --height-of-switch: 30px;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 18px;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303136;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
