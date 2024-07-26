@@ -7,6 +7,9 @@ const body = document.body;
 const header =document.querySelector(".header")
 const link = document.querySelectorAll('a')
 const animatedBg = document.querySelector(".background")
+const allAboutSection = document.querySelector(".allabout")
+const overviewItem = document.querySelectorAll(".overview-item")
+const priceitem = document.querySelectorAll(".priceitem")
 
 menu.addEventListener("click",(e)=>{
 links.classList.toggle("showlinks")
@@ -18,9 +21,19 @@ closeMenu.addEventListener("click",()=>{
 modeSwitch.addEventListener('click',(e)=>{  
     modeSwitch.classList.toggle('dark')
     body.classList.toggle("dark-mode")
+    allAboutSection.classList.toggle("dark-mode")
     animatedBg.classList.toggle("showanimated")
+    menu.classList.toggle("dark-mode")
+    overviewItem.forEach((item)=>{
+        item.classList.toggle('dark-mode')
+    })
+    
     link.forEach((a)=>{
         a.classList.toggle('dark-mode')
+    })
+
+    priceitem.forEach((item)=>{
+        item.classList.toggle("dark-mode")
     })
     header.classList.toggle("dark-mode")
     localStorage.setItem('theme',body.classList.contains("dark-mode")?"dark":"light")
@@ -31,9 +44,17 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(theme == 'dark'){
         body.classList.add("dark-mode")
         header.classList.add("dark-mode")
+        allAboutSection.classList.add("dark-mode")
         animatedBg.classList.add("showanimated")
+        menu.classList.add("dark-mode")
+        overviewItem.forEach((item)=>{
+            item.classList.add('dark-mode')
+        })
         link.forEach((a)=>{
             a.classList.add('dark-mode')
+        })
+        priceitem.forEach((item)=>{
+            item.classList.add("dark-mode")
         })
     }
 })
