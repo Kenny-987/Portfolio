@@ -169,4 +169,13 @@
         width: 100%;
         margin: auto;
       }
+      .teamgrid{
+        grid-template-columns: repeat(1,1fr);
+      }
+      .member-img img{
+        width: 100%;
+    }
+    .member p{
+      width: 90%;
+  }
 }
