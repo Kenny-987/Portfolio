@@ -1,0 +1,44 @@
+.aboutus{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.aboutus h1{
+    text-align: center;
+}
+.aboutus p{
+    margin-top: 30px;
+}
+.teamgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+.member{
+    width: 100%;
+    /* background-color: #a3d9fb67 ; */
+}
+.member h3{
+    text-align: center;
+}
+.member p{
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.member-img{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member-img img{
+    width: 50%;
+    height: 250px;
+    /* border: 1px solid red; */
+    object-fit: cover;
+    border-radius: 4px;
+}
