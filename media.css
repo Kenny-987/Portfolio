@@ -138,6 +138,11 @@
       .benefit{
         margin-bottom: 20px;
       }
+
+      .portfoliogrid{
+        grid-template-columns: repeat(1,1fr);
+      }
+
       .pricegrid{
         grid-template-columns: repeat(1,1fr);
         width: 96%;
@@ -147,6 +152,7 @@
       .priceitem.dark-mode{
        background-color: transparent;
        border: 1px solid #333333;
+       margin-bottom: 30px;
       }
       .footer-container {
        flex-direction: column;
@@ -158,5 +164,9 @@
       }
       .footer-section ul li {
         margin:0;
+      }
+      #quoteForm{
+        width: 100%;
+        margin: auto;
       }
 }

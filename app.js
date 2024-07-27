@@ -10,6 +10,10 @@ const animatedBg = document.querySelector(".background")
 const allAboutSection = document.querySelector(".allabout")
 const overviewItem = document.querySelectorAll(".overview-item")
 const priceitem = document.querySelectorAll(".priceitem")
+const labels = document.querySelectorAll(".label")
+const socialIcons = document.querySelectorAll(".social-icons")
+const portfolioItem = document.querySelectorAll(".portfolio-item")
+const contactLinks = document.querySelectorAll(".contact-info")
 
 menu.addEventListener("click",(e)=>{
 links.classList.toggle("showlinks")
@@ -35,6 +39,21 @@ modeSwitch.addEventListener('click',(e)=>{
     priceitem.forEach((item)=>{
         item.classList.toggle("dark-mode")
     })
+
+    labels.forEach((label)=>{
+        label.classList.toggle("dark-mode")
+    })
+
+    socialIcons.forEach((icon)=>{
+        icon.classList.toggle("dark-mode")
+    })
+
+    portfolioItem.forEach((item)=>{
+        item.classList.toggle("dark-mode")
+    })
+    contactLinks.forEach((link)=>{
+        link.classList.toggle("dark-mode")
+    })
     header.classList.toggle("dark-mode")
     localStorage.setItem('theme',body.classList.contains("dark-mode")?"dark":"light")
 })
@@ -53,8 +72,24 @@ document.addEventListener("DOMContentLoaded",()=>{
         link.forEach((a)=>{
             a.classList.add('dark-mode')
         })
+
         priceitem.forEach((item)=>{
             item.classList.add("dark-mode")
+        })
+
+        labels.forEach((label)=>{
+            label.classList.add("dark-mode")
+        })
+
+        socialIcons.forEach((icon)=>{
+            icon.classList.add("dark-mode")
+        })
+
+        portfolioItem.forEach((item)=>{
+            item.classList.add("dark-mode")
+        })
+        contactLinks.forEach((link)=>{
+            link.classList.add("dark-mode")
         })
     }
 })

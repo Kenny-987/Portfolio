@@ -6,24 +6,65 @@
     <title>About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/989ba93bfa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="logo">K.M</div>
-            <ul class="links">
-                <li class="link"><a href="index.html">Back To Home</a></li>
-            </ul>
+    <!-- header section -->
+    <section class="header">
+        <!-- animated background on dark mode -->
+        <div class="background">
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+            <div class="particle"></div>
+            <div class="particle parti2"></div>
+          </div>
+        <!-- navbar -->
+        <div class="header-content">
+<nav>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/WAWG1344.JPG" alt="logo">
         </div>
-    </nav>
-    <section id="about" class="about">
-        <div class="heading">About Me</div>
-        <div class="image"></div>
-        <p>My name is Kenneth Madondo and I am a FullStack Web Developer. I am 23 and was born in Bulawayo, Zimbabwe. Wrote my first Html tag and my first hello world program in Javascript in 2020, I think I've come a long way but thats for you to judge.<br>
-            I specialize in creating websites or web applications to cater for business or individual needs, whether big or small, static or dynamic and fullstack or just frontend. Everyday is an opportunity to learn and every project provides a platform for me to grow and develop my skills. I love gaming, watching anime (cliche for developers I know) and football (soccer if you prefer the american version).
-        </p>
-        <p>After developing an interest in programming I decided to enrol at an Institution to better develop and enhance my skills and I enrolled into an Information Technology program in 2022 and got my certificate. Currently im comoleting a diploma in the same field in 2025, however this does not hinder me from working on projects and webapps. I see school as a side activity and developing webappsn for clients as my main activity.</p>
-        <p>Currently I am quite comfortable coding using Javascript and the Reactjs framework, Nodejs and Expressjs and MySQL and MongoDb. I'm working on C# ASP.Net to get broader knowledge on web based development environments and languages.</p>
+        
+        <div class="link-switch">
+            <ul class="links">
+                <div class="close">
+                    <img src="./images/close-svgrepo-com.svg" alt="">
+                </div>
+                <li class="link"><a class='a' href="./index.html">Home</a></li>
+                <li class="link"><a class='a' href="#about">About</a></li>
+                <li class="link"><a class='a' href="#skills">Services</a></li>
+                <li class="link"><a class='a' href="#projects">Projects</a></li>
+                <li class="link"><a class='a' href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-switch">
+                <div class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" class="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+        </div>
+        
+    </div>
+</nav>
+</div>
+<!-- navbar -->
+
     </section>
+    <!-- header section -->
+    <script src="./app.js"></script>
 </body>
 </html>
