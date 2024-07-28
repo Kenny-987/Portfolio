@@ -499,7 +499,23 @@ button {
 button:hover {
   background-color: #2C3E50;
 }
-                              
+.methods{
+  margin: auto;
+  width: 80%;
+  margin-top: 100px;
+  text-align: center;
+}
+.methods h2{
+  text-align: center;
+}    
+.methods h3{
+  margin-top: 20px;
+}
+.payment-cards{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}                      
   /* purple color
   7b0ead
   */
