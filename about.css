@@ -7,43 +7,25 @@
     text-align: center;
 }
 .aboutus p{
-    margin-top: 30px;
-}
-.teamgrid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
-    margin-top: 50px;
-}
-.member{
-    width: 100%;
-    /* background-color: #a3d9fb67 ; */
-}
-.member h3{
-    text-align: center;
-}
-.member p{
-    margin-top: 10px;
-    text-align: center;
-    width: 50%;
+    width: 70%;
     margin: auto;
+    font-size: 18px;
 }
-.member-img{
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about-img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 30px;
 }
-.member-img img{
-    width: 50%;
-    height: 250px;
-    /* border: 1px solid red; */
+.about-img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 4px;
 }
-/* @media (max-width:768px){
-    .teamgrid{
-        grid-template-columns: repeat(1,1fr);
+@media (max-width:768px){
+    .aboutus p{
+        width: 100%;
+        font-size: 18px;
     }
-} */
+}
